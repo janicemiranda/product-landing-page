@@ -13,9 +13,11 @@
 		<header role="banner">
 			<nav aria-label="Main Navigation">
 				<a href="index.html" aria-label="Oura Ring Home" class="logo">
-					<h1>Oura Ring 4</h1>
+					<h1>OURA</h1>
 				</a>
-				<ul>
+				<input type="checkbox" id="nav-toggle" class="hidden-checkbox" />
+				<label for="nav-toggle" class="nav-button">☰</label>
+				<ul class="nav-links">
 					<li><a href="#features" aria-current="page">Features</a></li>
 					<li><a href="#shipping">Shipping</a></li>
 					<li><a href="#payment-methods">Payment Methods</a></li>
@@ -24,7 +26,6 @@
 		</header>
 		<main role="main">
 			<section id="hero">
-				<!-- <img src="./img/oura-ring-black.jpg" alt="Black Oura Ring 4" id="hero-img" /> -->
 				<h2>Oura Ring 4</h2>
 				<p>Our most personal smart ring ever.</p>
 			</section>
@@ -86,24 +87,36 @@
 						</ul>
 					</div>
 				</div>
+				<div class="pay-promo">
+					<div class="pay-promo-item">
+						<h3>Payment Methods</h3>
+						<p>We accept the following payment methods:</p>
+						<div class="payment-icons">
+								<i class="fa-brands fa-cc-paypal"></i>
+								<i class="fa-brands fa-cc-visa"></i>
+								<i class="fa-brands fa-cc-mastercard"></i>
+								<i class="fa-brands fa-cc-discover"></i>
+								<i class="fa-brands fa-cc-amex"></i>
+						</div>
+				</div>
+				<div class="pay-promo-item">
+						<h3>Promotions & Discounts</h3>
+						<p>Get <strong>10% off</strong> your first order when you sign up for our newsletter.</p>
+				</div>
+				</div>
 			</section>
       <section id="payment-methods">
-        <div class="payment">
-            <h2>Payment Methods</h2>
-            <p>We accept the following payment methods:</p>
-            <div class="payment-icons">
-                <i class="fa-brands fa-cc-paypal"></i>
-                <i class="fa-brands fa-cc-visa"></i>
-                <i class="fa-brands fa-cc-mastercard"></i>
-                <i class="fa-brands fa-cc-discover"></i>
-                <i class="fa-brands fa-cc-amex"></i>
-            </div>
-        </div>
-        <div class="promotions">
-            <h3>Promotions & Discounts</h3>
-            <p>Get <strong>10% off</strong> your first order when you sign up for our newsletter.</p>
-        </div>
     </section>
+		<section id="image-gallery">
+			<h2>Image Gallery</h2>
+			<div class="gallery">
+				<img src="./img/testimonials-anne.jpg" alt="">
+				<img src="./img/rings-wide-various.jpg" alt="">
+				<img src="./img/testimonials-ted.jpg" alt="">
+				<img src="./img/feature-highlight-01.jpg" alt="">
+				<img src="./img/feature-highlight-03.jpg" alt="">
+			</div>
+		</section>
 		</main>
     <footer>
 			<section id="contact">
