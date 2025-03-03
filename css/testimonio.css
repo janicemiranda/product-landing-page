@@ -46,11 +46,10 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 60px;
 	padding: 1rem 2rem;
+	height: 60px;
 	background-color: var(--nav-bg-light);
 	color: var(--nav-text-color);
-	gap: 20px;
 	width: 100%;
 	z-index: 1000;
 	position: fixed;
@@ -69,13 +68,14 @@ nav {
 
 .nav-links {
 	display: flex;
-	gap: 20px;
 	list-style: none;
+	li {
+		padding: 1rem;
+	}
 }
 
 nav ul {
 	display: flex;
-	gap: 2rem;
 }
 
 main {
@@ -94,10 +94,8 @@ aside {
 	padding-top: 70px;
 }
 .sidebar-filter {
-	display: flex;
-	flex-direction: column;
 	gap: 10px;
-	margin: 10px;
+	padding: 0.5rem 1.5rem;
 }
 
 footer {
@@ -156,19 +154,18 @@ footer h3 {
 	.nav-button {
 		display: inline-block;
 	}
-
 	.nav-links {
 		display: none;
 		flex-direction: column;
-		gap: 10px;
-		padding: 10px;
 		position: absolute;
 		top: 100%;
 		width: 100vw;
 		background: var(--nav-bg-light);
 		left: 0;
 		box-sizing: border-box;
-		padding: 1rem 2rem;
+		li {
+			padding: 0.5rem 2rem;
+		}
 	}
 
 	.hidden-checkbox:checked ~ .nav-links {
