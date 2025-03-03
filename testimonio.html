@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Oura Ring 4</title>
 		<link rel="stylesheet" href="./css/testimonio.css" />
+		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 	</head>
 	<body>
 		<header role="banner">
@@ -15,9 +16,9 @@
 				<input type="checkbox" id="nav-toggle" class="hidden-checkbox" />
 				<label for="nav-toggle" class="nav-button">☰</label>
 				<ul class="nav-links">
-					<li><a href="#features" aria-current="page">Features</a></li>
-					<li><a href="#shipping">Shipping</a></li>
-					<li><a href="#payment-methods">Payment Methods</a></li>
+					<li class="hover:bg-stone-500"><a href="#features" aria-current="page">Features</a></li>
+					<li class="hover:bg-stone-500"><a href="#shipping">Shipping</a></li>
+					<li class="hover:bg-stone-500"><a href="#payment-methods">Payment Methods</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -79,19 +80,19 @@
 			</div>
 		</main>
 		<aside>
-			<div class="sidebar-filter">
-				<h3>Filter</h3>
+			<div class="sidebar-filter flex flex-col">
+				<h3 class="text-2xl">Filter</h3>
 				<div class="sort-by">
-					<label for="sort-by">Sort By:</label>
-					<select name="sort-by" id="sort-by">
+					<label for="sort-by" class="font-bold">Sort By:</label>
+					<select name="sort-by" id="sort-by" class="bg-gray-100">
 						<option value="most-recent">Most Recent</option>
 						<option value="highest-rating">Highest Rating</option>
 						<option value="lowest-rating">Lowest Rating</option>
 					</select>
 				</div>
 				<div class="rating">
-					<label for="rating">Rating:</label>
-					<select name="rating" id="rating">
+					<label for="rating" class="font-bold">Rating:</label>
+					<select name="rating" id="rating " class="bg-gray-100">
 						<option value="Recommend">5 Stars</option>
 						<option value="Not Recommend">4 Stars</option>
 						<option value="Not Recommend">3 Stars</option>
@@ -100,8 +101,8 @@
 					</select>
 				</div>
 				<div class="location">
-					<label for="location">Location:</label>
-					<select id="continents" name="continents">
+					<label for="location" class="font-bold">Location:</label>
+					<select id="continents" name="continents" class="bg-gray-100">
 						<option value="africa">Africa</option>
 						<option value="antarctica">Antarctica</option>
 						<option value="asia">Asia</option>
