@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 :root {
 	--nav-bg-light: #46403a;
-	--main-bg-light: #eee5d3;
+	--main-bg-light: #e7e4df;
 	--nav-text-color: white;
 	--font-size: 16px;
 	--spacing: 10px;
@@ -69,6 +69,7 @@ nav {
 .nav-links {
 	display: flex;
 	list-style: none;
+	white-space: nowrap;
 	li {
 		padding: 1rem;
 	}
@@ -154,6 +155,7 @@ footer h3 {
 	.nav-button {
 		display: inline-block;
 	}
+
 	.nav-links {
 		display: none;
 		flex-direction: column;
@@ -163,6 +165,8 @@ footer h3 {
 		background: var(--nav-bg-light);
 		left: 0;
 		box-sizing: border-box;
+		align-items: center;
+		text-align: center;
 		li {
 			padding: 0.5rem 2rem;
 		}
